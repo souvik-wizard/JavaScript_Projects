@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="Logo/headlogo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tripper.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    
+<!-- Nav Bar  -->
+
+
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+            <nav class="navbar bg-primary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="//Tripper.com">
+                        <img src="Logo/Tripper-logos_whitemini.png" alt="" width="130" height="35"
+                            class="d-inline-block align-text-top">
+
+                    </a>
+                </div>
+            </nav>
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" id="searchTxt" placeholder="Search by name" aria-label="Search">
+                <input class="btn btn-outline-light" id="searchBtn" type="image" style="height:40px;width:50px;"
+                    src="Logo/search.png" />
+                <!-- <button  src="Logo/search.png" class="btn btn-outline-light" type="submit" >Go</button> -->
+            </form>
+        </div>
+        </div>
+    </nav>
+
+<!-- alert popup -->
+
+    <div class="alert alert-warning alert-dismissible fade show " role="alert">
+        
+        <strong>Alert!</strong> Don't share your personal feelings here.    
+  
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+<!-- Mid portion -->
+
+    <div class="container my-4">
+        <div class="mb-3 ">
+            <label for="exampleFormControlInput1"  class="form-label">Name</label>
+            <input type="text" class="form-control" id="addName"  placeholder="Enter your name here">
+            <small class="form-text text-muted invalid-feedback">Invalid name.</small>
+        </div>
+        <div class="my-4">
+            <label for="exampleFormControlTextarea1" class="form-label">Where do you want to go?</label>
+            <textarea class="form-control" id="addTxt" rows="2" placeholder="Type here."></textarea>
+            <small class="form-text text-muted invalid-feedback">Please fill the form.</small>
+            <div class="text-center">
+                <button class="btn btn-primary my-3 " id="addBtn"> Add </button>
+            </div>
+        </div>
+        <hr>
+        <h1>Your Places</h1>
+        <hr>
+
+        <div id="notes" class="row container-fluid"></div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
