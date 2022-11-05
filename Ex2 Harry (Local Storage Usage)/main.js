@@ -7,7 +7,6 @@ into the local storage.
 
 let divElem=document.createElement('div');
 
-
 let text;
 let val=localStorage.getItem('text')
 if (val==null){
@@ -18,7 +17,6 @@ else{
 
 }
 divElem.appendChild(text);
-
 divElem.setAttribute('id', 'element')
 divElem.setAttribute('style', 'border:2px solid red; width:165px; margin:30px; padding:25px;');
 
